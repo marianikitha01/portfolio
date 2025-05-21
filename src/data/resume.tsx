@@ -1,5 +1,6 @@
+
 import type { ResumeData } from '@/lib/types';
-import { Brain, Database, Code, Settings, TrendingUp, BarChart, MessageSquare, Users } from 'lucide-react';
+import { Brain, Database, Code, Settings, TrendingUp, MessageSquare, Users, Cloud, Server, Cpu, Zap as GenAiIcon, Bot, BarChart3, Rss } from 'lucide-react'; // Added more icons
 
 // Define a simple brain-like SVG icon for Data Science Concepts
 const BrainCircuitIcon = () => (
@@ -27,85 +28,132 @@ const BrainCircuitIcon = () => (
 
 
 export const resumeData: ResumeData = {
-  name: 'Maria Nikitha Suresh', 
-  title: 'Data Science Graduate | AI & Machine Learning Enthusiast',
+  name: 'Maria Nikitha Suresh',
+  title: 'Data Scientist | Machine Learning & Generative AI',
   summary:
-    "A passionate and results-driven Data Science graduate with hands-on experience in machine learning, deep learning, data analysis, and data engineering. My background spans academic research and industry roles, focusing on developing AI-powered solutions for real-world impact in areas like healthcare, video processing, and generative design. I am adept at bridging technical innovation with practical applications.",
+    "Passionate Data Science graduate (University of Arizona) with hands-on experience in machine learning, deep learning, data analysis, and data engineering. Proven ability in developing AI-powered solutions for healthcare (suture classification with YOLOv8), video processing, and generative design (Chikankari patterns with Stable Diffusion). Formerly Data Analyst & Software Engineer at Protecto, building Tableau/PowerBI dashboards and enhancing internal tools. Seeking to drive innovation at the intersection of AI and impactful problem-solving.",
   contact: {
-    email: 'maria.suresh@example.com',
-    linkedin: 'https://linkedin.com/in/mariasuresh',
-    github: 'https://github.com/mariasuresh',
+    email: 'marianikitha.suresh@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/maria-nikitha-588994242',
+    github: 'https://github.com/mariasuresh', // Assuming this is the correct GitHub profile
   },
   experience: [
     {
-      id: 'exp1',
-      role: 'Data Science Intern',
-      company: 'Innovatech Solutions',
-      period: 'Summer 2023',
+      id: 'exp_astec',
+      role: 'Machine learning Developer',
+      company: 'ASTEC Lab, University of Arizona',
+      period: 'Aug 2024 - Dec 2024',
       description: [
-        'Assisted senior data scientists in developing a customer segmentation model.',
-        'Performed data cleaning, preprocessing, and exploratory data analysis on large datasets.',
-        'Contributed to the creation of data visualization dashboards using Tableau.',
+        'Developed a deep learning-based suture classification model (YOLOv8) to identify sutures as Good, Tight, or Loose with 95% accuracy.',
+        'Conducted exploratory data analysis (EDA) and feature engineering to enhance model interpretability.',
+        'Implemented precision, recall and F1-score for model evaluation, optimizing for medical imaging challenges.',
+        'Automated image preprocessing pipelines using Python (OpenCV, NumPy) to improve detection consistency and presented findings to research teams.',
       ],
       logoUrl: 'https://placehold.co/100x100.png',
-      logoHint: 'company logo tech'
+      logoHint: 'university lab'
     },
     {
-      id: 'exp2',
-      role: 'Research Assistant',
-      company: 'University Data Lab',
-      period: '2022 - 2023',
+      id: 'exp_srw',
+      role: 'Student Research Worker',
+      company: 'University of Arizona',
+      period: 'Jul 2024 - Aug 2024',
       description: [
-        'Supported research on NLP techniques for social media data analysis.',
-        'Collected and annotated data, and implemented baseline machine learning models.',
-        'Co-authored a workshop paper on sentiment analysis methodologies.',
+        'Worked on neural network-based video processing for foreground-background separation using Bayesian Tensor Factorization.',
+        'Applied probabilistic modeling and regularization techniques to enhance video quality and feature extraction.',
+        'Conducted performance tuning and model evaluation to improve output accuracy and robustness.',
       ],
       logoUrl: 'https://placehold.co/100x100.png',
-      logoHint: 'university logo'
+      logoHint: 'university research'
+    },
+    {
+      id: 'exp_protecto',
+      role: 'Data Analyst & Software Engineer',
+      company: 'Protecto (OneDPO Private Limited)',
+      period: 'Jun 2022 - Jul 2023',
+      description: [
+        'Built interactive Tableau & Power BI dashboards for privacy risk analysis, enabling data-driven decision-making.',
+        'Designed and implemented frontend features for internal privacy risk analysis tools, improving user experience and engagement.',
+        'Utilized statistical modeling to detect anomalies and privacy risks, ensuring compliance with industry standards.',
+        'Collaborated cross-functionally to implement data-driven BI solutions for enterprise data workflows.',
+      ],
+      logoUrl: 'https://placehold.co/100x100.png',
+      logoHint: 'company logo protecto'
     },
   ],
   education: [
     {
-      id: 'edu1',
-      institution: 'University of Arizona', // Updated based on inspiration text
+      id: 'edu_uofa',
+      institution: 'University of Arizona, United States',
       degree: 'Master of Science in Data Science',
-      period: '2023 - Present (Expected Graduation: 2025)', // Assuming graduation year
-      description: ['Relevant Coursework: Machine Learning, Deep Learning, Big Data Analytics, Statistical Methods, Data Visualization.'],
+      period: 'Aug 2023 - May 2025 (Expected)',
+      description: ['Relevant Coursework: Deep Learning, Machine Learning, Data Engineering, Generative AI, NLP, Data Analysis & Visualization.'],
       logoUrl: 'https://placehold.co/100x100.png',
-      logoHint: 'university campus'
+      logoHint: 'university campus arizona'
     },
     {
-      id: 'edu2',
-      institution: 'Your Undergraduate University', // Placeholder, user to specify
-      degree: 'Bachelor of Science in Computer Science',
-      period: '2019 - 2023',
-      description: ['Graduated with Honors, Minor in Statistics.'],
+      id: 'edu_christ',
+      institution: 'Christ University, India',
+      degree: 'Bachelor of Technology in Information Technology',
+      period: 'June 2018 - May 2022',
+      description: ['Focused on foundational concepts in computer science, software development, and database management.'],
       logoUrl: 'https://placehold.co/100x100.png',
-      logoHint: 'graduation cap'
+      logoHint: 'university campus christ'
     },
   ],
   skills: [
-    { id: 'sk1', name: 'Python', category: 'Programming Languages', icon: Code, proficiency: 95 },
-    { id: 'sk2', name: 'R', category: 'Programming Languages', icon: Code, proficiency: 80 },
-    { id: 'sk3', name: 'SQL', category: 'Databases', icon: Database, proficiency: 90 },
-    { id: 'sk4', name: 'Machine Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 90 },
-    { id: 'sk5', name: 'Deep Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 85 }, // Proficiency adjusted
-    { id: 'sk6', name: 'Generative AI (GenAI)', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 80 },
-    { id: 'sk_nlp', name: 'NLP', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 75 },
-    { id: 'sk7', name: 'Data Visualization', category: 'Tools & Technologies', icon: TrendingUp, proficiency: 90 },
-    { id: 'sk8', name: 'Pandas & NumPy', category: 'Tools & Technologies', icon: Settings, proficiency: 95 },
-    { id: 'sk9', name: 'Scikit-learn', category: 'Tools & Technologies', icon: Settings, proficiency: 90 },
-    { id: 'sk10', name: 'TensorFlow/Keras', category: 'Tools & Technologies', icon: Settings, proficiency: 80 },
-    { id: 'sk11', name: 'PyTorch', category: 'Tools & Technologies', icon: Settings, proficiency: 75 },
-    { id: 'sk_yolo', name: 'YOLOv8', category: 'Tools & Technologies', icon: Settings, proficiency: 70 },
-    { id: 'sk_sd', name: 'Stable Diffusion', category: 'Tools & Technologies', icon: Settings, proficiency: 70 },
-    { id: 'sk12', name: 'Tableau', category: 'Tools & Technologies', icon: TrendingUp, proficiency: 85 },
-    { id: 'sk_aws', name: 'AWS', category: 'Cloud Platforms', icon: Database, proficiency: 70 },
-    { id: 'sk_azure', name: 'Azure', category: 'Cloud Platforms', icon: Database, proficiency: 70 },
-    { id: 'sk13', name: 'Git & GitHub', category: 'Tools & Technologies', icon: Code, proficiency: 90 },
-    { id: 'sk14', name: 'Docker', category: 'Tools & Technologies', icon: Settings, proficiency: 70 },
-    { id: 'sk15', name: 'Problem Solving', category: 'Soft Skills', icon: Brain, proficiency: 95 },
-    { id: 'sk16', name: 'Communication', category: 'Soft Skills', icon: MessageSquare, proficiency: 90 },
-    { id: 'sk17', name: 'Teamwork', category: 'Soft Skills', icon: Users, proficiency: 90 },
+    // Programming Languages
+    { id: 'sk_python', name: 'Python', category: 'Programming Languages', icon: Code, proficiency: 95 },
+    { id: 'sk_sql', name: 'SQL', category: 'Programming Languages', icon: Database, proficiency: 90 },
+    { id: 'sk_r', name: 'R', category: 'Programming Languages', icon: Code, proficiency: 75 },
+    { id: 'sk_java', name: 'Java', category: 'Programming Languages', icon: Code, proficiency: 70 },
+    { id: 'sk_cpp', name: 'C++', category: 'Programming Languages', icon: Code, proficiency: 65 },
+    { id: 'sk_bash', name: 'Bash', category: 'Programming Languages', icon: Code, proficiency: 60 },
+    { id: 'sk_php', name: 'PHP', category: 'Programming Languages', icon: Code, proficiency: 50 },
+
+    // Data Science Concepts
+    { id: 'sk_ml', name: 'Machine Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 95 },
+    { id: 'sk_dl', name: 'Deep Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 90 },
+    { id: 'sk_genai', name: 'Generative AI', category: 'Data Science Concepts', icon: GenAiIcon, proficiency: 85 },
+    { id: 'sk_nlp', name: 'NLP', category: 'Data Science Concepts', icon: Rss, proficiency: 80 }, // Using Rss as a proxy for text/communication
+    { id: 'sk_data_analysis', name: 'Data Analysis', category: 'Data Science Concepts', icon: BarChart3, proficiency: 90 },
+    { id: 'sk_data_viz', name: 'Data Visualization', category: 'Data Science Concepts', icon: TrendingUp, proficiency: 90 },
+    { id: 'sk_data_eng', name: 'Data Engineering', category: 'Data Science Concepts', icon: Server, proficiency: 80 },
+
+    // Tools & Technologies
+    { id: 'sk_pandas', name: 'Pandas', category: 'Tools & Technologies', icon: Settings, proficiency: 95 },
+    { id: 'sk_numpy', name: 'NumPy', category: 'Tools & Technologies', icon: Settings, proficiency: 95 },
+    { id: 'sk_scikit', name: 'Scikit-learn', category: 'Tools & Technologies', icon: Settings, proficiency: 90 },
+    { id: 'sk_tensorflow', name: 'TensorFlow', category: 'Tools & Technologies', icon: Cpu, proficiency: 85 },
+    { id: 'sk_pytorch', name: 'PyTorch', category: 'Tools & Technologies', icon: Cpu, proficiency: 85 },
+    { id: 'sk_keras', name: 'Keras', category: 'Tools & Technologies', icon: Cpu, proficiency: 80 },
+    { id: 'sk_opencv', name: 'OpenCV', category: 'Tools & Technologies', icon: Settings, proficiency: 80 },
+    { id: 'sk_transformers', name: 'Transformers (HF)', category: 'Tools & Technologies', icon: Bot, proficiency: 80 },
+    { id: 'sk_gpt', name: 'GPT Models', category: 'Tools & Technologies', icon: Bot, proficiency: 75 },
+    { id: 'sk_bert', name: 'BERT', category: 'Tools & Technologies', icon: Bot, proficiency: 75 },
+    { id: 'sk_nltk', name: 'NLTK', category: 'Tools & Technologies', icon: Rss, proficiency: 70 },
+    { id: 'sk_yolov8', name: 'YOLOv8', category: 'Tools & Technologies', icon: Settings, proficiency: 85 },
+    { id: 'sk_stable_diffusion', name: 'Stable Diffusion', category: 'Tools & Technologies', icon: GenAiIcon, proficiency: 80 },
+    { id: 'sk_git', name: 'Git & GitHub', category: 'Tools & Technologies', icon: Code, proficiency: 90 },
+    { id: 'sk_spark', name: 'Apache Spark', category: 'Tools & Technologies', icon: Settings, proficiency: 75 },
+    { id: 'sk_tableau', name: 'Tableau', category: 'Tools & Technologies', icon: TrendingUp, proficiency: 85 },
+    { id: 'sk_powerbi', name: 'Power BI', category: 'Tools & Technologies', icon: TrendingUp, proficiency: 80 },
+
+
+    // Cloud Platforms
+    { id: 'sk_aws', name: 'AWS', category: 'Cloud Platforms', icon: Cloud, proficiency: 80 },
+    { id: 'sk_aws_services', name: 'AWS (Lambda, S3, Glue, Athena)', category: 'Cloud Platforms', icon: Cloud, proficiency: 75 },
+    { id: 'sk_azure', name: 'Azure', category: 'Cloud Platforms', icon: Cloud, proficiency: 80 },
+    { id: 'sk_azure_services', name: 'Azure (Data Factory, Databricks, Data Lake Storage)', category: 'Cloud Platforms', icon: Cloud, proficiency: 75 },
+
+
+    // Databases (re-categorized from tools)
+    { id: 'sk_mysql', name: 'MySQL', category: 'Databases', icon: Database, proficiency: 80 },
+    { id: 'sk_mariadb', name: 'MariaDB', category: 'Databases', icon: Database, proficiency: 70 },
+    { id: 'sk_mongodb', name: 'MongoDB', category: 'Databases', icon: Database, proficiency: 70 },
+
+    // Soft Skills
+    { id: 'sk_problem_solving', name: 'Problem Solving', category: 'Soft Skills', icon: Brain, proficiency: 95 },
+    { id: 'sk_communication', name: 'Communication', category: 'Soft Skills', icon: MessageSquare, proficiency: 90 },
+    { id: 'sk_teamwork', name: 'Teamwork', category: 'Soft Skills', icon: Users, proficiency: 90 },
   ],
 };
