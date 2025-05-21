@@ -31,9 +31,6 @@ export function AboutMeSection() {
             <p>
               My technical toolkit includes Python, SQL, scikit-learn, and deep learning frameworks, with experience spanning domains like creative AI, healthcare, and business analytics. But my real strength lies in seeing the why behind the what, connecting the technical with the meaningful, creating solutions that are not only functional, but thoughtful, relevant, and built to make a difference.
             </p>
-            <p className="font-semibold text-primary">
-              Let’s build something impactful.
-            </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-10 justify-center"> {/* Centered buttons */}
             <Button asChild size="lg" className="shadow-md hover:shadow-lg transition-shadow">
