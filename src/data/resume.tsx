@@ -27,14 +27,14 @@ const BrainCircuitIcon = () => (
 
 
 export const resumeData: ResumeData = {
-  name: 'Your Name', // Replace with actual name
+  name: 'Maria Nikitha Suresh', 
   title: 'Master of Data Science Student | Aspiring Data Scientist',
   summary:
     "Driven and analytical Master of Data Science student with a strong foundation in statistical modeling, machine learning, and data visualization. Passionate about leveraging data to solve complex problems and generate actionable insights. Eager to apply academic knowledge and project experience to real-world challenges in a dynamic data science role.",
   contact: {
-    email: 'your.email@example.com',
-    linkedin: 'https://linkedin.com/in/yourusername',
-    github: 'https://github.com/yourusername',
+    email: 'maria.suresh@example.com',
+    linkedin: 'https://linkedin.com/in/mariasuresh',
+    github: 'https://github.com/mariasuresh',
   },
   experience: [
     {

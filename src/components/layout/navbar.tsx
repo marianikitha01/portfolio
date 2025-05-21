@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { MainNavLinks } from './main-nav-links';
 import { Container } from './container';
+import { ThemeToggleSwitch } from './theme-toggle-switch';
 
 export function Navbar() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -16,7 +17,7 @@ export function Navbar() {
 
 
   if (!mounted) {
-    return ( // Render a placeholder or simplified navbar during SSR/initial client render to avoid hydration issues
+    return ( 
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <Container>
           <div className="flex h-16 items-center justify-between">
@@ -24,9 +25,9 @@ export function Navbar() {
               <Zap className="h-6 w-6" />
               <span>DataWeave</span>
             </Link>
-            <div className="h-8 w-8 animate-pulse rounded-md bg-muted md:hidden" /> {/* Placeholder for menu button */}
+            <div className="h-8 w-8 animate-pulse rounded-md bg-muted md:hidden" /> 
             <nav className="hidden items-center space-x-2 md:flex">
-              {/* Simplified links or placeholders for SSR */}
+              <div className="h-8 w-20 rounded-full bg-muted animate-pulse"></div>
             </nav>
           </div>
         </Container>
@@ -43,11 +44,15 @@ export function Navbar() {
             <span>DataWeave</span>
           </Link>
 
-          <nav className="hidden items-center space-x-1 md:flex">
+          <nav className="hidden items-center space-x-2 md:flex">
             <MainNavLinks />
+            <div className="ml-2">
+              <ThemeToggleSwitch />
+            </div>
           </nav>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+             <ThemeToggleSwitch />
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label="Open menu">

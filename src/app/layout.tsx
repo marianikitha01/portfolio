@@ -5,6 +5,7 @@ import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
+import { ThemeProvider } from 'next-themes';
 
 const geistSans = GeistSans;
 const geistMono = GeistMono;
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   },
   description: 'A personal portfolio for a Data Science student, showcasing projects, skills, and insights.',
   icons: {
-    icon: '/favicon.ico', // Assuming you might add a favicon later
+    icon: '/favicon.ico', 
   },
 };
 
@@ -34,12 +35,19 @@ export default function RootLayout({
           geistMono.variable
         )}
       >
-        <div className="relative flex min-h-screen flex-col">
-          <Navbar />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-        </div>
-        <Toaster />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="relative flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );

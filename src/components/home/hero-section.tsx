@@ -9,7 +9,7 @@ export function HeroSection() {
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-16">
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-extrabold tracking-tight text-primary sm:text-5xl md:text-6xl">
-            Hello, I&apos;m <span className="text-accent">Your Name</span>
+            Hello, I&apos;m <span className="text-accent">Maria Nikitha Suresh</span>
           </h1>
           <p className="mt-6 text-lg text-foreground md:text-xl">
             A passionate Master&apos;s student in Data Science, transforming complex data into actionable insights and innovative solutions. Explore my work and journey.
@@ -30,7 +30,7 @@ export function HeroSection() {
         <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
           <Image
             src="https://placehold.co/600x600.png"
-            alt="Your Name - Profile"
+            alt="Maria Nikitha Suresh - Profile"
             width={600}
             height={600}
             className="rounded-full shadow-2xl object-cover aspect-square"

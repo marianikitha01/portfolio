@@ -31,8 +31,8 @@ export default function ContactPage() {
                 <Mail className="h-5 w-5 mr-3 mt-1 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <a href="mailto:your.email@example.com" className="hover:text-accent transition-colors">
-                    your.email@example.com {/* Replace with actual email */}
+                  <a href="mailto:maria.suresh@example.com" className="hover:text-accent transition-colors">
+                    maria.suresh@example.com
                   </a>
                 </div>
               </div>
@@ -40,8 +40,8 @@ export default function ContactPage() {
                 <Linkedin className="h-5 w-5 mr-3 mt-1 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">LinkedIn</h4>
-                  <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                    linkedin.com/in/yourusername {/* Replace with actual LinkedIn */}
+                  <a href="https://linkedin.com/in/mariasuresh" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                    linkedin.com/in/mariasuresh
                   </a>
                 </div>
               </div>
@@ -49,8 +49,8 @@ export default function ContactPage() {
                 <Github className="h-5 w-5 mr-3 mt-1 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">GitHub</h4>
-                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                    github.com/yourusername {/* Replace with actual GitHub */}
+                  <a href="https://github.com/mariasuresh" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                    github.com/mariasuresh
                   </a>
                 </div>
               </div>

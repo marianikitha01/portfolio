@@ -11,7 +11,7 @@ export function Footer() {
           <p>&copy; {currentYear} DataWeave. All rights reserved.</p>
           <div className="flex items-center space-x-4">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:maria.suresh@example.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Email"
@@ -20,7 +20,7 @@ export function Footer() {
               <Mail className="h-5 w-5" />
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/mariasuresh"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -29,7 +29,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/mariasuresh"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
