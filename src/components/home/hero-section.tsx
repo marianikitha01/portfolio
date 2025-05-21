@@ -12,10 +12,10 @@ export function HeroSection() {
             Maria Nikitha Suresh
           </h1>
           <p className="mt-3 text-xl font-medium text-accent md:text-2xl">
-            Master’s in Data Science | Turning Questions into Models, and Models into Results
+            Master’s in Data Science | AI & Machine Learning Enthusiast
           </p>
           <p className="mt-6 text-lg text-foreground md:text-xl">
-            Welcome to my portfolio! I’m a recent graduate from the University of Arizona with a deep passion for data science and its power to solve real-world problems. This portfolio showcases the projects, skills, and experiences that reflect my journey so far.
+            Welcome to my portfolio! I&apos;m a recent Data Science graduate from the University of Arizona, passionate about transforming data into impactful solutions. Explore my projects and journey in AI and machine learning.
           </p>
           <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
             <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow">
