@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Container } from '@/components/layout/container';
 import { PageHeader } from '@/components/common/page-header';
-import { resumeData } from '@/data/resume';
+import { resumeData } from '@/data/resume.tsx';
 import { ResumeSection } from '@/components/resume/resume-section';
 import { ExperienceItem } from '@/components/resume/experience-item';
 import { EducationItem } from '@/components/resume/education-item';
