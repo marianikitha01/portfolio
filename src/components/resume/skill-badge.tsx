@@ -1,3 +1,4 @@
+
 import type { Skill } from '@/lib/types';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
@@ -19,13 +20,13 @@ export function SkillBadge({ skill }: SkillBadgeProps) {
               {IconComponent ? <IconComponent className="h-5 w-5" /> : skill.iconSvg}
             </div>
             <p className="text-sm font-medium text-center text-foreground group-hover:text-primary transition-colors">{skill.name}</p>
-            {skill.proficiency && (
+            {skill.proficiency && typeof skill.proficiency === 'number' && (
               <Progress value={skill.proficiency} className="w-full h-1.5 mt-2 group-hover:[&>div]:bg-primary" />
             )}
           </div>
         </TooltipTrigger>
         <TooltipContent side="top">
-          <p>{skill.category}{skill.proficiency ? ` - ${skill.proficiency}% proficiency` : ''}</p>
+          <p>{skill.category}{skill.proficiency && typeof skill.proficiency === 'number' ? ` - ${skill.proficiency}% proficiency` : ''}</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>

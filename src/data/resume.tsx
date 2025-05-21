@@ -1,6 +1,6 @@
 
 import type { ResumeData } from '@/lib/types';
-import { Brain, Database, Code, Settings, TrendingUp, MessageSquare, Users, Cloud, Server, Cpu, Zap as GenAiIcon, Bot, BarChart3, Rss } from 'lucide-react'; // Added more icons
+import { Brain, Database, Code, Settings, TrendingUp, MessageSquare, Users, Cloud, Server, Cpu, Zap as GenAiIcon, Bot, BarChart3, Rss } from 'lucide-react';
 
 // Define a simple brain-like SVG icon for Data Science Concepts
 const BrainCircuitIcon = () => (
@@ -35,7 +35,7 @@ export const resumeData: ResumeData = {
   contact: {
     email: 'marianikitha.suresh@gmail.com',
     linkedin: 'https://www.linkedin.com/in/maria-nikitha-588994242',
-    github: 'https://github.com/mariasuresh', // Assuming this is the correct GitHub profile
+    github: 'https://github.com/marianikitha01',
   },
   experience: [
     {
@@ -102,58 +102,56 @@ export const resumeData: ResumeData = {
   ],
   skills: [
     // Programming Languages
-    { id: 'sk_python', name: 'Python', category: 'Programming Languages', icon: Code, proficiency: 95 },
-    { id: 'sk_sql', name: 'SQL', category: 'Programming Languages', icon: Database, proficiency: 90 },
-    { id: 'sk_r', name: 'R', category: 'Programming Languages', icon: Code, proficiency: 75 },
-    { id: 'sk_java', name: 'Java', category: 'Programming Languages', icon: Code, proficiency: 70 },
-    { id: 'sk_cpp', name: 'C++', category: 'Programming Languages', icon: Code, proficiency: 65 },
-    { id: 'sk_bash', name: 'Bash', category: 'Programming Languages', icon: Code, proficiency: 60 },
-    { id: 'sk_php', name: 'PHP', category: 'Programming Languages', icon: Code, proficiency: 50 },
+    { id: 'sk_python', name: 'Python', category: 'Programming Languages', icon: Code },
+    { id: 'sk_sql', name: 'SQL', category: 'Programming Languages', icon: Database },
+    { id: 'sk_r', name: 'R', category: 'Programming Languages', icon: Code },
+    { id: 'sk_java', name: 'Java', category: 'Programming Languages', icon: Code },
+    { id: 'sk_cpp', name: 'C++', category: 'Programming Languages', icon: Code },
+    { id: 'sk_bash', name: 'Bash', category: 'Programming Languages', icon: Code },
+    { id: 'sk_php', name: 'PHP', category: 'Programming Languages', icon: Code },
 
     // Data Science Concepts
-    { id: 'sk_ml', name: 'Machine Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 95 },
-    { id: 'sk_dl', name: 'Deep Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 90 },
-    { id: 'sk_genai', name: 'Generative AI', category: 'Data Science Concepts', icon: GenAiIcon, proficiency: 85 },
-    { id: 'sk_nlp', name: 'NLP', category: 'Data Science Concepts', icon: Rss, proficiency: 80 }, // Using Rss as a proxy for text/communication
-    { id: 'sk_data_analysis', name: 'Data Analysis', category: 'Data Science Concepts', icon: BarChart3, proficiency: 90 },
-    { id: 'sk_data_viz', name: 'Data Visualization', category: 'Data Science Concepts', icon: TrendingUp, proficiency: 90 },
-    { id: 'sk_data_eng', name: 'Data Engineering', category: 'Data Science Concepts', icon: Server, proficiency: 80 },
+    { id: 'sk_ml', name: 'Machine Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon /> },
+    { id: 'sk_dl', name: 'Deep Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon /> },
+    { id: 'sk_genai', name: 'Generative AI', category: 'Data Science Concepts', icon: GenAiIcon },
+    { id: 'sk_nlp', name: 'NLP', category: 'Data Science Concepts', icon: Rss },
+    { id: 'sk_data_analysis', name: 'Data Analysis', category: 'Data Science Concepts', icon: BarChart3 },
+    { id: 'sk_data_viz', name: 'Data Visualization', category: 'Data Science Concepts', icon: TrendingUp },
+    { id: 'sk_data_eng', name: 'Data Engineering', category: 'Data Science Concepts', icon: Server },
 
     // Tools & Technologies
-    { id: 'sk_pandas', name: 'Pandas', category: 'Tools & Technologies', icon: Settings, proficiency: 95 },
-    { id: 'sk_numpy', name: 'NumPy', category: 'Tools & Technologies', icon: Settings, proficiency: 95 },
-    { id: 'sk_scikit', name: 'Scikit-learn', category: 'Tools & Technologies', icon: Settings, proficiency: 90 },
-    { id: 'sk_tensorflow', name: 'TensorFlow', category: 'Tools & Technologies', icon: Cpu, proficiency: 85 },
-    { id: 'sk_pytorch', name: 'PyTorch', category: 'Tools & Technologies', icon: Cpu, proficiency: 85 },
-    { id: 'sk_keras', name: 'Keras', category: 'Tools & Technologies', icon: Cpu, proficiency: 80 },
-    { id: 'sk_opencv', name: 'OpenCV', category: 'Tools & Technologies', icon: Settings, proficiency: 80 },
-    { id: 'sk_transformers', name: 'Transformers (HF)', category: 'Tools & Technologies', icon: Bot, proficiency: 80 },
-    { id: 'sk_gpt', name: 'GPT Models', category: 'Tools & Technologies', icon: Bot, proficiency: 75 },
-    { id: 'sk_bert', name: 'BERT', category: 'Tools & Technologies', icon: Bot, proficiency: 75 },
-    { id: 'sk_nltk', name: 'NLTK', category: 'Tools & Technologies', icon: Rss, proficiency: 70 },
-    { id: 'sk_yolov8', name: 'YOLOv8', category: 'Tools & Technologies', icon: Settings, proficiency: 85 },
-    { id: 'sk_stable_diffusion', name: 'Stable Diffusion', category: 'Tools & Technologies', icon: GenAiIcon, proficiency: 80 },
-    { id: 'sk_git', name: 'Git & GitHub', category: 'Tools & Technologies', icon: Code, proficiency: 90 },
-    { id: 'sk_spark', name: 'Apache Spark', category: 'Tools & Technologies', icon: Settings, proficiency: 75 },
-    { id: 'sk_tableau', name: 'Tableau', category: 'Tools & Technologies', icon: TrendingUp, proficiency: 85 },
-    { id: 'sk_powerbi', name: 'Power BI', category: 'Tools & Technologies', icon: TrendingUp, proficiency: 80 },
-
+    { id: 'sk_pandas', name: 'Pandas', category: 'Tools & Technologies', icon: Settings },
+    { id: 'sk_numpy', name: 'NumPy', category: 'Tools & Technologies', icon: Settings },
+    { id: 'sk_scikit', name: 'Scikit-learn', category: 'Tools & Technologies', icon: Settings },
+    { id: 'sk_tensorflow', name: 'TensorFlow', category: 'Tools & Technologies', icon: Cpu },
+    { id: 'sk_pytorch', name: 'PyTorch', category: 'Tools & Technologies', icon: Cpu },
+    { id: 'sk_keras', name: 'Keras', category: 'Tools & Technologies', icon: Cpu },
+    { id: 'sk_opencv', name: 'OpenCV', category: 'Tools & Technologies', icon: Settings },
+    { id: 'sk_transformers', name: 'Transformers (HF)', category: 'Tools & Technologies', icon: Bot },
+    { id: 'sk_gpt', name: 'GPT Models', category: 'Tools & Technologies', icon: Bot },
+    { id: 'sk_bert', name: 'BERT', category: 'Tools & Technologies', icon: Bot },
+    { id: 'sk_nltk', name: 'NLTK', category: 'Tools & Technologies', icon: Rss },
+    { id: 'sk_yolov8', name: 'YOLOv8', category: 'Tools & Technologies', icon: Settings },
+    { id: 'sk_stable_diffusion', name: 'Stable Diffusion', category: 'Tools & Technologies', icon: GenAiIcon },
+    { id: 'sk_git', name: 'Git & GitHub', category: 'Tools & Technologies', icon: Code },
+    { id: 'sk_spark', name: 'Apache Spark', category: 'Tools & Technologies', icon: Settings },
+    { id: 'sk_tableau', name: 'Tableau', category: 'Tools & Technologies', icon: TrendingUp },
+    { id: 'sk_powerbi', name: 'Power BI', category: 'Tools & Technologies', icon: TrendingUp },
 
     // Cloud Platforms
-    { id: 'sk_aws', name: 'AWS', category: 'Cloud Platforms', icon: Cloud, proficiency: 80 },
-    { id: 'sk_aws_services', name: 'AWS (Lambda, S3, Glue, Athena)', category: 'Cloud Platforms', icon: Cloud, proficiency: 75 },
-    { id: 'sk_azure', name: 'Azure', category: 'Cloud Platforms', icon: Cloud, proficiency: 80 },
-    { id: 'sk_azure_services', name: 'Azure (Data Factory, Databricks, Data Lake Storage)', category: 'Cloud Platforms', icon: Cloud, proficiency: 75 },
+    { id: 'sk_aws', name: 'AWS', category: 'Cloud Platforms', icon: Cloud },
+    { id: 'sk_aws_services', name: 'AWS (Lambda, S3, Glue, Athena)', category: 'Cloud Platforms', icon: Cloud },
+    { id: 'sk_azure', name: 'Azure', category: 'Cloud Platforms', icon: Cloud },
+    { id: 'sk_azure_services', name: 'Azure (Data Factory, Databricks, Data Lake Storage)', category: 'Cloud Platforms', icon: Cloud },
 
-
-    // Databases (re-categorized from tools)
-    { id: 'sk_mysql', name: 'MySQL', category: 'Databases', icon: Database, proficiency: 80 },
-    { id: 'sk_mariadb', name: 'MariaDB', category: 'Databases', icon: Database, proficiency: 70 },
-    { id: 'sk_mongodb', name: 'MongoDB', category: 'Databases', icon: Database, proficiency: 70 },
+    // Databases
+    { id: 'sk_mysql', name: 'MySQL', category: 'Databases', icon: Database },
+    { id: 'sk_mariadb', name: 'MariaDB', category: 'Databases', icon: Database },
+    { id: 'sk_mongodb', name: 'MongoDB', category: 'Databases', icon: Database },
 
     // Soft Skills
-    { id: 'sk_problem_solving', name: 'Problem Solving', category: 'Soft Skills', icon: Brain, proficiency: 95 },
-    { id: 'sk_communication', name: 'Communication', category: 'Soft Skills', icon: MessageSquare, proficiency: 90 },
-    { id: 'sk_teamwork', name: 'Teamwork', category: 'Soft Skills', icon: Users, proficiency: 90 },
+    { id: 'sk_problem_solving', name: 'Problem Solving', category: 'Soft Skills', icon: Brain },
+    { id: 'sk_communication', name: 'Communication', category: 'Soft Skills', icon: MessageSquare },
+    { id: 'sk_teamwork', name: 'Teamwork', category: 'Soft Skills', icon: Users },
   ],
 };

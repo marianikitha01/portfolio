@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Container } from '@/components/layout/container';
 import { PageHeader } from '@/components/common/page-header';
@@ -25,7 +26,7 @@ export default function ResumePage() {
     <Container className="py-12 md:py-16">
       <div className="mb-12 flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-8 p-6 bg-card rounded-xl shadow-xl border">
         <Avatar className="h-32 w-32 md:h-40 md:w-40 border-4 border-primary shadow-lg">
-          <AvatarImage src="https://placehold.co/200x200.png" alt={name} data-ai-hint="professional portrait"/>
+          <AvatarImage src="https://placehold.co/200x200.png" alt={name} data-ai-hint="graduation portrait"/>
           <AvatarFallback className="text-4xl">{name.substring(0, 2).toUpperCase()}</AvatarFallback>
         </Avatar>
         <div className="flex-1">

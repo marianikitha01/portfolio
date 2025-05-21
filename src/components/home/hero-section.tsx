@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Download } from 'lucide-react';
@@ -38,7 +39,7 @@ export function HeroSection() {
             height={600}
             className="rounded-full shadow-2xl object-cover aspect-square"
             priority
-            data-ai-hint="professional portrait"
+            data-ai-hint="graduation portrait"
           />
            <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full bg-accent opacity-70 blur-xl animate-pulse"></div>
            <div className="absolute -top-4 -left-4 h-20 w-20 rounded-lg bg-primary opacity-60 blur-lg animate-ping delay-1000"></div>

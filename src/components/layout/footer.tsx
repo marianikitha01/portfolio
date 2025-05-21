@@ -1,3 +1,4 @@
+
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Container } from './container';
 
@@ -8,10 +9,10 @@ export function Footer() {
     <footer className="border-t border-border/40 bg-background py-8 text-sm text-muted-foreground">
       <Container>
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p>&copy; {currentYear} Maria Suresh. All rights reserved.</p>
+          <p>&copy; {currentYear} Maria Nikitha Suresh. All rights reserved.</p>
           <div className="flex items-center space-x-4">
             <a
-              href="mailto:maria.suresh@example.com"
+              href="mailto:marianikitha.suresh@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Email"
@@ -20,7 +21,7 @@ export function Footer() {
               <Mail className="h-5 w-5" />
             </a>
             <a
-              href="https://github.com/mariasuresh"
+              href="https://github.com/marianikitha01"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -29,7 +30,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com/in/mariasuresh"
+              href="https://www.linkedin.com/in/maria-nikitha-588994242"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

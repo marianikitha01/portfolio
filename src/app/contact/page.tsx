@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Container } from '@/components/layout/container';
 import { PageHeader } from '@/components/common/page-header';
@@ -31,8 +32,8 @@ export default function ContactPage() {
                 <Mail className="h-5 w-5 mr-3 mt-1 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <a href="mailto:maria.suresh@example.com" className="hover:text-accent transition-colors">
-                    maria.suresh@example.com
+                  <a href="mailto:marianikitha.suresh@gmail.com" className="hover:text-accent transition-colors">
+                    marianikitha.suresh@gmail.com
                   </a>
                 </div>
               </div>
@@ -40,8 +41,8 @@ export default function ContactPage() {
                 <Linkedin className="h-5 w-5 mr-3 mt-1 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">LinkedIn</h4>
-                  <a href="https://linkedin.com/in/mariasuresh" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                    linkedin.com/in/mariasuresh
+                  <a href="https://www.linkedin.com/in/maria-nikitha-588994242" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                    linkedin.com/in/maria-nikitha-588994242
                   </a>
                 </div>
               </div>
@@ -49,8 +50,8 @@ export default function ContactPage() {
                 <Github className="h-5 w-5 mr-3 mt-1 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">GitHub</h4>
-                  <a href="https://github.com/mariasuresh" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                    github.com/mariasuresh
+                  <a href="https://github.com/marianikitha01" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                    github.com/marianikitha01
                   </a>
                 </div>
               </div>
@@ -58,7 +59,7 @@ export default function ContactPage() {
                 <MapPin className="h-5 w-5 mr-3 mt-1 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Location</h4>
-                  <p>City, Country (Optional)</p>
+                  <p>Tucson, Arizona (Open to relocate)</p> {/* Example, update if needed */}
                 </div>
               </div>
             </CardContent>
