@@ -1,6 +1,6 @@
 
 import type { ResumeData } from '@/lib/types';
-import { Brain, Database, Code, Settings, TrendingUp, MessageSquare, Users, Cloud, Server, Cpu, Zap as GenAiIcon, Bot, BarChart3, Rss } from 'lucide-react';
+import { Brain, Database, Code, Settings, TrendingUp, MessageSquare, Users, Cloud, Server, Cpu, Zap as GenAiIcon, Bot, BarChart3, Rss, Briefcase, GraduationCap, Zap } from 'lucide-react';
 
 // Define a simple brain-like SVG icon for Data Science Concepts
 const BrainCircuitIcon = () => (
@@ -29,9 +29,9 @@ const BrainCircuitIcon = () => (
 
 export const resumeData: ResumeData = {
   name: 'Maria Nikitha Suresh',
-  title: 'Data Scientist | Machine Learning & Generative AI',
+  title: 'Data Scientist | Machine Learning & Generative AI Developer',
   summary:
-    "Passionate Data Science graduate (University of Arizona) with hands-on experience in machine learning, deep learning, data analysis, and data engineering. Proven ability in developing AI-powered solutions for healthcare (suture classification with YOLOv8), video processing, and generative design (Chikankari patterns with Stable Diffusion). Formerly Data Analyst & Software Engineer at Protecto, building Tableau/PowerBI dashboards and enhancing internal tools. Seeking to drive innovation at the intersection of AI and impactful problem-solving.",
+    "Passionate Data Science graduate from the University of Arizona with hands-on experience in machine learning, deep learning, data analysis, and data engineering. Proven ability in developing AI-powered solutions for healthcare (suture classification with YOLOv8), video processing, and generative design (Chikankari patterns with Stable Diffusion). Formerly Data Analyst & Software Engineer at Protecto, building Tableau/PowerBI dashboards and enhancing internal tools. Seeking to drive innovation at the intersection of AI and impactful problem-solving.",
   contact: {
     email: 'marianikitha.suresh@gmail.com',
     linkedin: 'https://www.linkedin.com/in/maria-nikitha-588994242',
@@ -47,7 +47,7 @@ export const resumeData: ResumeData = {
         'Developed a deep learning-based suture classification model (YOLOv8) to identify sutures as Good, Tight, or Loose with 95% accuracy.',
         'Conducted exploratory data analysis (EDA) and feature engineering to enhance model interpretability.',
         'Implemented precision, recall and F1-score for model evaluation, optimizing for medical imaging challenges.',
-        'Automated image preprocessing pipelines using Python (OpenCV, NumPy) to improve detection consistency and presented findings to research teams.',
+        'Automated image preprocessing pipelines using Python (OpenCV, NumPy) to improve detection consistency and presented findings to research teams, showcasing data-driven insights for improving surgical training.',
       ],
       logoUrl: 'https://placehold.co/100x100.png',
       logoHint: 'university lab'
@@ -111,32 +111,34 @@ export const resumeData: ResumeData = {
     { id: 'sk_php', name: 'PHP', category: 'Programming Languages', icon: Code },
 
     // Data Science Concepts
-    { id: 'sk_ml', name: 'Machine Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon /> },
     { id: 'sk_dl', name: 'Deep Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon /> },
+    { id: 'sk_ml', name: 'Machine Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon /> },
+    { id: 'sk_data_eng', name: 'Data Engineering', category: 'Data Science Concepts', icon: Server },
     { id: 'sk_genai', name: 'Generative AI', category: 'Data Science Concepts', icon: GenAiIcon },
     { id: 'sk_nlp', name: 'NLP', category: 'Data Science Concepts', icon: Rss },
     { id: 'sk_data_analysis', name: 'Data Analysis', category: 'Data Science Concepts', icon: BarChart3 },
     { id: 'sk_data_viz', name: 'Data Visualization', category: 'Data Science Concepts', icon: TrendingUp },
-    { id: 'sk_data_eng', name: 'Data Engineering', category: 'Data Science Concepts', icon: Server },
+
 
     // Tools & Technologies
-    { id: 'sk_pandas', name: 'Pandas', category: 'Tools & Technologies', icon: Settings },
-    { id: 'sk_numpy', name: 'NumPy', category: 'Tools & Technologies', icon: Settings },
-    { id: 'sk_scikit', name: 'Scikit-learn', category: 'Tools & Technologies', icon: Settings },
     { id: 'sk_tensorflow', name: 'TensorFlow', category: 'Tools & Technologies', icon: Cpu },
     { id: 'sk_pytorch', name: 'PyTorch', category: 'Tools & Technologies', icon: Cpu },
     { id: 'sk_keras', name: 'Keras', category: 'Tools & Technologies', icon: Cpu },
+    { id: 'sk_scikit', name: 'Scikit-learn', category: 'Tools & Technologies', icon: Settings },
     { id: 'sk_opencv', name: 'OpenCV', category: 'Tools & Technologies', icon: Settings },
+    { id: 'sk_numpy', name: 'NumPy', category: 'Tools & Technologies', icon: Settings },
+    { id: 'sk_pandas', name: 'Pandas', category: 'Tools & Technologies', icon: Settings },
+    { id: 'sk_git', name: 'Git & GitHub', category: 'Tools & Technologies', icon: Code },
+    { id: 'sk_spark', name: 'Apache Spark', category: 'Tools & Technologies', icon: Settings },
     { id: 'sk_transformers', name: 'Transformers (HF)', category: 'Tools & Technologies', icon: Bot },
     { id: 'sk_gpt', name: 'GPT Models', category: 'Tools & Technologies', icon: Bot },
     { id: 'sk_bert', name: 'BERT', category: 'Tools & Technologies', icon: Bot },
     { id: 'sk_nltk', name: 'NLTK', category: 'Tools & Technologies', icon: Rss },
     { id: 'sk_yolov8', name: 'YOLOv8', category: 'Tools & Technologies', icon: Settings },
     { id: 'sk_stable_diffusion', name: 'Stable Diffusion', category: 'Tools & Technologies', icon: GenAiIcon },
-    { id: 'sk_git', name: 'Git & GitHub', category: 'Tools & Technologies', icon: Code },
-    { id: 'sk_spark', name: 'Apache Spark', category: 'Tools & Technologies', icon: Settings },
     { id: 'sk_tableau', name: 'Tableau', category: 'Tools & Technologies', icon: TrendingUp },
     { id: 'sk_powerbi', name: 'Power BI', category: 'Tools & Technologies', icon: TrendingUp },
+
 
     // Cloud Platforms
     { id: 'sk_aws', name: 'AWS', category: 'Cloud Platforms', icon: Cloud },
@@ -148,6 +150,7 @@ export const resumeData: ResumeData = {
     { id: 'sk_mysql', name: 'MySQL', category: 'Databases', icon: Database },
     { id: 'sk_mariadb', name: 'MariaDB', category: 'Databases', icon: Database },
     { id: 'sk_mongodb', name: 'MongoDB', category: 'Databases', icon: Database },
+    { id: 'sk_postgresql', name: 'PostgreSQL', category: 'Databases', icon: Database },
 
     // Soft Skills
     { id: 'sk_problem_solving', name: 'Problem Solving', category: 'Soft Skills', icon: Brain },
@@ -155,3 +158,5 @@ export const resumeData: ResumeData = {
     { id: 'sk_teamwork', name: 'Teamwork', category: 'Soft Skills', icon: Users },
   ],
 };
+
+    
