@@ -1,0 +1,50 @@
+import type { Project } from '@/lib/types';
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    title: 'Predictive Maintenance for Industrial Machinery',
+    description: 'Developed a machine learning model to predict equipment failure, reducing downtime by 20%.',
+    longDescription: 'This project involved analyzing sensor data from industrial machines to identify patterns preceding failures. Utilized LSTM networks for time-series forecasting and deployed the model as a microservice. The solution helped optimize maintenance schedules and significantly cut operational costs.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'industrial machinery',
+    tags: ['Python', 'TensorFlow', 'Scikit-learn', 'LSTM', 'AWS SageMaker'],
+    codeLink: 'https://github.com/yourusername/predictive-maintenance',
+    liveDemoLink: '#', // Link to a demo if available
+    category: 'Machine Learning',
+  },
+  {
+    id: '2',
+    title: 'Customer Churn Prediction',
+    description: 'Built a classification model to identify customers at risk of churn, achieving 85% accuracy.',
+    longDescription: 'Leveraged customer demographic, behavioral, and transactional data to train a Random Forest classifier. Feature engineering and hyperparameter tuning were key to achieving high accuracy. The insights from this model enabled targeted retention campaigns.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'customer analytics',
+    tags: ['Python', 'Pandas', 'Scikit-learn', 'XGBoost', 'Tableau'],
+    codeLink: 'https://github.com/yourusername/customer-churn',
+    category: 'Classification',
+  },
+  {
+    id: '3',
+    title: 'Interactive Data Visualization Dashboard',
+    description: 'Designed and implemented a web-based dashboard for visualizing sales data across regions.',
+    longDescription: 'Created an interactive dashboard using Plotly Dash, allowing users to explore sales trends, filter by various dimensions, and gain insights into product performance. The dashboard provided real-time data updates and improved decision-making for the sales team.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'data dashboard',
+    tags: ['Python', 'Plotly Dash', 'Pandas', 'SQL', 'UI/UX'],
+    codeLink: 'https://github.com/yourusername/sales-dashboard',
+    liveDemoLink: '#',
+    category: 'Data Visualization',
+  },
+   {
+    id: '4',
+    title: 'Natural Language Processing for Sentiment Analysis',
+    description: 'Developed an NLP model to analyze customer reviews and classify sentiment.',
+    longDescription: 'This project focused on using transformer-based models (BERT) for sentiment analysis on a large dataset of customer reviews. The model achieved high F1-scores and provided valuable feedback for product improvement.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'text analysis',
+    tags: ['Python', 'Hugging Face Transformers', 'PyTorch', 'NLP'],
+    codeLink: 'https://github.com/yourusername/sentiment-analysis',
+    category: 'Natural Language Processing',
+  },
+];
