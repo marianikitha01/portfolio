@@ -1,8 +1,9 @@
+
 import { HeroSection } from '@/components/home/hero-section';
 import { Container } from '@/components/layout/container';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, Briefcase, Cpu, PencilLine } from 'lucide-react';
+import { ArrowRight, Briefcase, UserCircle, Mail } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { AboutMeSection } from '@/components/home/about-me-section';
@@ -10,8 +11,8 @@ import { AboutMeSection } from '@/components/home/about-me-section';
 export default function HomePage() {
   const quickLinks = [
     { title: 'Featured Projects', href: '/projects', icon: Briefcase, description: 'Discover my latest data science endeavors.', image: 'https://placehold.co/400x300.png', imageHint: 'data project' },
-    { title: 'AI Description Tailor', href: '/ai-tailor', icon: Cpu, description: 'Use AI to adapt project descriptions for any audience.', image: 'https://placehold.co/400x300.png', imageHint: 'artificial intelligence' },
-    { title: 'Latest Blog Post', href: '/blog', icon: PencilLine, description: 'Read my thoughts on current data science trends.', image: 'https://placehold.co/400x300.png', imageHint: 'writing analytics' },
+    { title: 'Interactive Resume', href: '/resume', icon: UserCircle, description: 'Explore my skills, experience, and education.', image: 'https://placehold.co/400x300.png', imageHint: 'resume document' },
+    { title: 'Contact Me', href: '/contact', icon: Mail, description: 'Let\'s connect! Reach out for inquiries or collaborations.', image: 'https://placehold.co/400x300.png', imageHint: 'contact envelope' },
   ];
 
   return (
