@@ -12,7 +12,7 @@ export function HeroSection() {
             Hello, I&apos;m <span className="text-accent">Maria Nikitha Suresh</span>
           </h1>
           <p className="mt-6 text-lg text-foreground md:text-xl">
-            A passionate Master&apos;s student in Data Science, transforming complex data into actionable insights and innovative solutions. Explore my work and journey.
+            Welcome to my portfolio! I&apos;m a recent Master&apos;s graduate in Data Science, passionate about transforming complex data into actionable insights and innovative solutions. My interests include machine learning, natural language processing, and ethical AI. Explore my work and journey.
           </p>
           <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
             <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow">

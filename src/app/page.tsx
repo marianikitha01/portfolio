@@ -18,6 +18,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <AboutMeSection />
       <section className="py-16 bg-secondary/50 dark:bg-background">
         <Container>
           <div className="mb-12 text-center">
@@ -54,7 +55,6 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
-      <AboutMeSection />
     </>
   );
 }
