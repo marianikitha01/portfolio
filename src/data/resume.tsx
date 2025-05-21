@@ -1,5 +1,5 @@
 import type { ResumeData } from '@/lib/types';
-import { Briefcase, GraduationCap, Brain, Database, Code, Settings, TrendingUp, ShieldCheck, BarChart, MessageSquare, Users } from 'lucide-react';
+import { Brain, Database, Code, Settings, TrendingUp, BarChart, MessageSquare, Users } from 'lucide-react';
 
 // Define a simple brain-like SVG icon for Data Science Concepts
 const BrainCircuitIcon = () => (
@@ -28,9 +28,9 @@ const BrainCircuitIcon = () => (
 
 export const resumeData: ResumeData = {
   name: 'Maria Nikitha Suresh', 
-  title: 'Master of Data Science Student | Aspiring Data Scientist',
+  title: 'Data Science Graduate | AI & Machine Learning Enthusiast',
   summary:
-    "Driven and analytical Master of Data Science student with a strong foundation in statistical modeling, machine learning, and data visualization. Passionate about leveraging data to solve complex problems and generate actionable insights. Eager to apply academic knowledge and project experience to real-world challenges in a dynamic data science role.",
+    "A passionate and results-driven Data Science graduate with hands-on experience in machine learning, deep learning, data analysis, and data engineering. My background spans academic research and industry roles, focusing on developing AI-powered solutions for real-world impact in areas like healthcare, video processing, and generative design. I am adept at bridging technical innovation with practical applications.",
   contact: {
     email: 'maria.suresh@example.com',
     linkedin: 'https://linkedin.com/in/mariasuresh',
@@ -67,16 +67,16 @@ export const resumeData: ResumeData = {
   education: [
     {
       id: 'edu1',
-      institution: 'Your University Name',
+      institution: 'University of Arizona', // Updated based on inspiration text
       degree: 'Master of Science in Data Science',
-      period: '2023 - Present (Expected Graduation: 2025)',
+      period: '2023 - Present (Expected Graduation: 2025)', // Assuming graduation year
       description: ['Relevant Coursework: Machine Learning, Deep Learning, Big Data Analytics, Statistical Methods, Data Visualization.'],
       logoUrl: 'https://placehold.co/100x100.png',
       logoHint: 'university campus'
     },
     {
       id: 'edu2',
-      institution: 'Your Undergraduate University',
+      institution: 'Your Undergraduate University', // Placeholder, user to specify
       degree: 'Bachelor of Science in Computer Science',
       period: '2019 - 2023',
       description: ['Graduated with Honors, Minor in Statistics.'],
@@ -89,14 +89,19 @@ export const resumeData: ResumeData = {
     { id: 'sk2', name: 'R', category: 'Programming Languages', icon: Code, proficiency: 80 },
     { id: 'sk3', name: 'SQL', category: 'Databases', icon: Database, proficiency: 90 },
     { id: 'sk4', name: 'Machine Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 90 },
-    { id: 'sk5', name: 'Deep Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 80 },
-    { id: 'sk6', name: 'Statistics', category: 'Data Science Concepts', icon: BarChart, proficiency: 85 },
+    { id: 'sk5', name: 'Deep Learning', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 85 }, // Proficiency adjusted
+    { id: 'sk6', name: 'Generative AI (GenAI)', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 80 },
+    { id: 'sk_nlp', name: 'NLP', category: 'Data Science Concepts', iconSvg: <BrainCircuitIcon />, proficiency: 75 },
     { id: 'sk7', name: 'Data Visualization', category: 'Tools & Technologies', icon: TrendingUp, proficiency: 90 },
     { id: 'sk8', name: 'Pandas & NumPy', category: 'Tools & Technologies', icon: Settings, proficiency: 95 },
     { id: 'sk9', name: 'Scikit-learn', category: 'Tools & Technologies', icon: Settings, proficiency: 90 },
     { id: 'sk10', name: 'TensorFlow/Keras', category: 'Tools & Technologies', icon: Settings, proficiency: 80 },
     { id: 'sk11', name: 'PyTorch', category: 'Tools & Technologies', icon: Settings, proficiency: 75 },
+    { id: 'sk_yolo', name: 'YOLOv8', category: 'Tools & Technologies', icon: Settings, proficiency: 70 },
+    { id: 'sk_sd', name: 'Stable Diffusion', category: 'Tools & Technologies', icon: Settings, proficiency: 70 },
     { id: 'sk12', name: 'Tableau', category: 'Tools & Technologies', icon: TrendingUp, proficiency: 85 },
+    { id: 'sk_aws', name: 'AWS', category: 'Cloud Platforms', icon: Database, proficiency: 70 },
+    { id: 'sk_azure', name: 'Azure', category: 'Cloud Platforms', icon: Database, proficiency: 70 },
     { id: 'sk13', name: 'Git & GitHub', category: 'Tools & Technologies', icon: Code, proficiency: 90 },
     { id: 'sk14', name: 'Docker', category: 'Tools & Technologies', icon: Settings, proficiency: 70 },
     { id: 'sk15', name: 'Problem Solving', category: 'Soft Skills', icon: Brain, proficiency: 95 },

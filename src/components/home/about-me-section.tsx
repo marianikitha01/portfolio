@@ -35,7 +35,7 @@ export function AboutMeSection() {
               {resumeData.summary}
             </p>
             <p className="text-lg text-foreground/90 mb-8 leading-relaxed">
-              Beyond my technical skills, I am a firm believer in continuous learning and collaboration. I thrive in environments where I can contribute to impactful projects and grow alongside a talented team. My goal is to leverage data-driven insights to create innovative solutions that make a tangible difference.
+              My experience includes designing a high-accuracy suture classification model using YOLOv8 at ASTEC Lab and enhancing data analysis capabilities as a Data Analyst and Software Development Engineer at Protecto (OneDPO Private Limited), where I built interactive Tableau dashboards and improved internal tools. I&apos;ve also led a Generative AI capstone project, creating a Chikankari design generator by fine-tuning Stable Diffusion with Advanced LoRA techniques. My core interests lie in building scalable AI/ML systems, particularly in GenAI, NLP, data visualization, and cloud data engineering (AWS, Azure). I thrive in collaborative environments and am excited by opportunities to drive innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="shadow-md hover:shadow-lg transition-shadow">
