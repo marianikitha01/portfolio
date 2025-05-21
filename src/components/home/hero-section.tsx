@@ -12,7 +12,7 @@ export function HeroSection() {
             Maria Nikitha Suresh
           </h1>
           <p className="mt-3 text-xl font-medium text-accent md:text-2xl">
-            Turning Questions into Models, and Models into Results
+            Master’s in Data Science | Turning Questions into Models, and Models into Results
           </p>
           <p className="mt-6 text-lg text-foreground md:text-xl">
             Welcome to my portfolio. I’m a recent graduate from the University of Arizona with a deep passion for data science and its power to solve real-world problems. This portfolio showcases the projects, skills, and experiences that reflect my journey so far.
