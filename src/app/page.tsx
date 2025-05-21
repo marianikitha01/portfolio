@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Briefcase, Cpu, PencilLine } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { AboutMeSection } from '@/components/home/about-me-section';
 
 export default function HomePage() {
   const quickLinks = [
@@ -52,6 +53,7 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
+      <AboutMeSection />
     </>
   );
 }
