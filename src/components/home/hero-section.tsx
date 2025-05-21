@@ -9,10 +9,13 @@ export function HeroSection() {
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-16">
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-extrabold tracking-tight text-primary sm:text-5xl md:text-6xl">
-            Hello, I&apos;m <span className="text-accent">Maria Nikitha Suresh</span>
+            Maria Nikitha Suresh
           </h1>
+          <p className="mt-3 text-xl font-medium text-accent md:text-2xl">
+            Master’s in Data Science | Turning Questions into Models, and Models into Results
+          </p>
           <p className="mt-6 text-lg text-foreground md:text-xl">
-            Welcome to my portfolio! I&apos;m a passionate and results-driven recent Data Science graduate. I specialize in transforming complex data into actionable insights using machine learning, deep learning, data analysis, and data engineering. Explore my work to see how I bridge technical innovation with meaningful real-world impact.
+            Welcome to my portfolio! I’m a recent graduate from the University of Arizona with a deep passion for data science and its power to solve real-world problems. This portfolio showcases the projects, skills, and experiences that reflect my journey so far.
           </p>
           <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
             <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow">
