@@ -23,7 +23,7 @@ export function Navbar() {
           <div className="flex h-16 items-center justify-between">
             <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary">
               <Zap className="h-6 w-6" />
-              <span>DataWeave</span>
+              <span>Maria Suresh</span>
             </Link>
             <div className="h-8 w-8 animate-pulse rounded-md bg-muted md:hidden" /> 
             <nav className="hidden items-center space-x-2 md:flex">
@@ -41,7 +41,7 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary hover:text-primary/90 transition-colors">
             <Zap className="h-6 w-6" />
-            <span>DataWeave</span>
+            <span>Maria Suresh</span>
           </Link>
 
           <nav className="hidden items-center space-x-2 md:flex">
@@ -63,7 +63,7 @@ export function Navbar() {
                 <div className="mb-6 flex items-center justify-between">
                    <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary" onClick={() => setIsSheetOpen(false)}>
                     <Zap className="h-6 w-6" />
-                    <span>DataWeave</span>
+                    <span>Maria Suresh</span>
                   </Link>
                   <SheetClose asChild>
                      <Button variant="ghost" size="icon" aria-label="Close menu">

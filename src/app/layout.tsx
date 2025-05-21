@@ -12,8 +12,8 @@ const geistMono = GeistMono;
 
 export const metadata: Metadata = {
   title: {
-    default: 'DataWeave Portfolio',
-    template: '%s | DataWeave',
+    default: 'Maria Nikitha Suresh - Portfolio',
+    template: '%s | Maria Nikitha Suresh',
   },
   description: 'A personal portfolio for a Data Science student, showcasing projects, skills, and insights.',
   icons: {

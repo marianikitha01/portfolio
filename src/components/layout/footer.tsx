@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="border-t border-border/40 bg-background py-8 text-sm text-muted-foreground">
       <Container>
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p>&copy; {currentYear} DataWeave. All rights reserved.</p>
+          <p>&copy; {currentYear} Maria Suresh. All rights reserved.</p>
           <div className="flex items-center space-x-4">
             <a
               href="mailto:maria.suresh@example.com"
