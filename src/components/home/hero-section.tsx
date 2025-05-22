@@ -34,7 +34,7 @@ export function HeroSection() {
         </div>
         <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
           <Image
-            src="/profile.jpg"
+            src="../../../public/profile.jpg"
             alt="Maria Nikitha Suresh - Profile"
             width={400}
             height={400}
