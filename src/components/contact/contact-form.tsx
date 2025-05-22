@@ -80,7 +80,7 @@ export function ContactForm() {
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <div>
             <Label htmlFor="name">Full Name</Label>
-            <Input id="name" {...form.register('name')} placeholder="John Doe" className="mt-1"/>
+            <Input id="name" {...form.register('name')} placeholder="Your name" className="mt-1"/>
             {form.formState.errors.name && (
               <p className="text-sm text-destructive mt-1">
                 {form.formState.errors.name.message}

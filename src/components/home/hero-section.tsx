@@ -33,13 +33,13 @@ export function HeroSection() {
           </div>
         </div>
         <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
-          <Image
-            src="../../../public/profile.jpg"
+          <img
+            src="/profile.jpg"
             alt="Maria Nikitha Suresh - Profile"
             width={400}
             height={400}
             className="rounded-full shadow-2xl object-cover aspect-square"
-            priority
+            
             data-ai-hint="graduation portrait"
           />
         </div>

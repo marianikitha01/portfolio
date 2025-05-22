@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X, Database } from 'lucide-react';
+import { Menu, X, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { MainNavLinks } from './main-nav-links';
@@ -22,7 +22,7 @@ export function Navbar() {
         <Container>
           <div className="flex h-16 items-center justify-between">
             <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary">
-              <Database className="h-6 w-6" />
+              <Sparkles className="h-6 w-6" />
               <span>Maria Nikitha Suresh</span>
             </Link>
             <nav className="hidden items-center space-x-2 md:flex">

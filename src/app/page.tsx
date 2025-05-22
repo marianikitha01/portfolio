@@ -29,7 +29,7 @@ export default function HomePage() {
             {quickLinks.map((link) => (
               <Card key={link.href} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader className="p-0">
-                  <Image 
+                  <img 
                     src={link.image} 
                     alt={link.title} 
                     width={400} 

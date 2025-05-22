@@ -12,7 +12,7 @@ export function EducationItem({ item }: EducationItemProps) {
     <Card className="mb-6 shadow-md hover:shadow-lg transition-shadow">
       <CardHeader className="flex flex-row items-start gap-4 space-y-0 pb-3">
          {item.logoUrl && (
-          <Image
+          <img
             src={item.logoUrl}
             alt={`${item.institution} logo`}
             width={48}

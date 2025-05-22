@@ -14,7 +14,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="flex flex-col h-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
       <CardHeader className="p-0 relative">
-        <Image
+        <img
           src={project.imageUrl}
           alt={project.title}
           width={600}

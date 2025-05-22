@@ -12,7 +12,7 @@ export function ExperienceItem({ item }: ExperienceItemProps) {
     <Card className="mb-6 shadow-md hover:shadow-lg transition-shadow">
       <CardHeader className="flex flex-row items-start gap-4 space-y-0 pb-3">
         {item.logoUrl && (
-          <Image
+          <img
             src={item.logoUrl}
             alt={`${item.company} logo`}
             width={48}
