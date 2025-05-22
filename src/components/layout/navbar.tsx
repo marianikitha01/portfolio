@@ -38,7 +38,7 @@ export function Navbar() {
       <Container>
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-lg font-bold text-primary hover:text-primary/90 transition-colors md:text-xl">
-            <Database className="h-6 w-6" />
+            <Sparkles className="h-6 w-6" />
             <span>Maria Nikitha Suresh</span>
           </Link>
 
@@ -60,7 +60,7 @@ export function Navbar() {
               <SheetContent side="right" className="w-full max-w-xs p-6">
                 <div className="mb-6 flex items-center justify-between">
                    <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary" onClick={() => setIsSheetOpen(false)}>
-                    <Database className="h-6 w-6" />
+                    <Sparkles className="h-6 w-6" />
                     <span>Maria Nikitha Suresh</span>
                   </Link>
                   <SheetClose asChild>
