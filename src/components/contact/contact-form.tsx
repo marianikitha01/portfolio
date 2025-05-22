@@ -1,21 +1,16 @@
-
 'use client';
 
-import { useActionState } from 'react'; // useActionState from 'react'
-import { useFormStatus } from 'react-dom'; // useFormStatus from 'react-dom'
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { submitContactForm, type ContactFormState } from '@/lib/actions';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Loader2, CheckCircle, AlertCircle } from 'lucide-react';
-import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
+import { Loader2 } from 'lucide-react';
+import { useState } from 'react';
 
 const ContactFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -26,11 +21,10 @@ const ContactFormSchema = z.object({
 
 type ContactFormData = z.infer<typeof ContactFormSchema>;
 
-function SubmitButton() {
-  const { pending } = useFormStatus();
+function SubmitButton({ loading }: { loading: boolean }) {
   return (
-    <Button type="submit" disabled={pending} className="w-full sm:w-auto">
-      {pending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
+    <Button type="submit" disabled={loading} className="w-full sm:w-auto">
+      {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
       Send Message
     </Button>
   );
@@ -38,8 +32,7 @@ function SubmitButton() {
 
 export function ContactForm() {
   const { toast } = useToast();
-  const initialFormState: ContactFormState = { message: '', type: null };
-  const [formState, formAction] = useActionState(submitContactForm, initialFormState);
+  const [loading, setLoading] = useState(false);
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(ContactFormSchema),
@@ -51,23 +44,29 @@ export function ContactForm() {
     },
   });
 
-  useEffect(() => {
-    if (formState.type === 'success') {
+  const onSubmit = async (data: ContactFormData) => {
+    setLoading(true);
+
+    try {
+      // Simulate delay
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
       toast({
         title: 'Message Sent!',
-        description: formState.message,
-        variant: 'default', // Shadcn uses 'default' for success-like, not 'success'
+        description: 'Thank you for your message! I will get back to you soon.',
       });
-      form.reset(); // Reset form fields on success
-    } else if (formState.type === 'error' && formState.message && !formState.errors) { // General error
-       toast({
+
+      form.reset();
+    } catch (error) {
+      toast({
         title: 'Error',
-        description: formState.message,
+        description: 'Something went wrong. Please try again later.',
         variant: 'destructive',
       });
+    } finally {
+      setLoading(false);
     }
-  }, [formState, toast, form]);
-
+  };
 
   return (
     <Card className="w-full max-w-2xl mx-auto shadow-xl border">
@@ -78,13 +77,13 @@ export function ContactForm() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <form action={formAction} className="space-y-6" onSubmit={form.handleSubmit(() => formAction(new FormData(form.control._formRef.current)))}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <div>
             <Label htmlFor="name">Full Name</Label>
             <Input id="name" {...form.register('name')} placeholder="John Doe" className="mt-1"/>
-            {(formState.errors?.name || form.formState.errors.name) && (
+            {form.formState.errors.name && (
               <p className="text-sm text-destructive mt-1">
-                {formState.errors?.name?.[0] || form.formState.errors.name?.message}
+                {form.formState.errors.name.message}
               </p>
             )}
           </div>
@@ -92,9 +91,9 @@ export function ContactForm() {
           <div>
             <Label htmlFor="email">Email Address</Label>
             <Input id="email" type="email" {...form.register('email')} placeholder="you@example.com" className="mt-1"/>
-             {(formState.errors?.email || form.formState.errors.email) && (
+            {form.formState.errors.email && (
               <p className="text-sm text-destructive mt-1">
-                {formState.errors?.email?.[0] || form.formState.errors.email?.message}
+                {form.formState.errors.email.message}
               </p>
             )}
           </div>
@@ -102,9 +101,9 @@ export function ContactForm() {
           <div>
             <Label htmlFor="subject">Subject</Label>
             <Input id="subject" {...form.register('subject')} placeholder="Project Inquiry" className="mt-1"/>
-            {(formState.errors?.subject || form.formState.errors.subject) && (
+            {form.formState.errors.subject && (
               <p className="text-sm text-destructive mt-1">
-                {formState.errors?.subject?.[0] || form.formState.errors.subject?.message}
+                {form.formState.errors.subject.message}
               </p>
             )}
           </div>
@@ -118,14 +117,14 @@ export function ContactForm() {
               rows={5}
               className="mt-1"
             />
-            {(formState.errors?.message || form.formState.errors.message) && (
+            {form.formState.errors.message && (
               <p className="text-sm text-destructive mt-1">
-                {formState.errors?.message?.[0] || form.formState.errors.message?.message}
+                {form.formState.errors.message.message}
               </p>
             )}
           </div>
-          
-          <SubmitButton />
+
+          <SubmitButton loading={loading} />
         </form>
       </CardContent>
     </Card>
