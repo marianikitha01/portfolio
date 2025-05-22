@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X, Database } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { MainNavLinks } from './main-nav-links';
@@ -22,12 +22,10 @@ export function Navbar() {
         <Container>
           <div className="flex h-16 items-center justify-between">
             <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary">
-              <Zap className="h-6 w-6" />
+              <Database className="h-6 w-6" />
               <span>Maria Nikitha Suresh</span>
             </Link>
-            <div className="h-8 w-8 animate-pulse rounded-md bg-muted md:hidden" /> 
             <nav className="hidden items-center space-x-2 md:flex">
-              <div className="h-8 w-20 rounded-full bg-muted animate-pulse"></div>
             </nav>
           </div>
         </Container>
@@ -40,7 +38,7 @@ export function Navbar() {
       <Container>
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-lg font-bold text-primary hover:text-primary/90 transition-colors md:text-xl">
-            <Zap className="h-6 w-6" />
+            <Database className="h-6 w-6" />
             <span>Maria Nikitha Suresh</span>
           </Link>
 
@@ -62,7 +60,7 @@ export function Navbar() {
               <SheetContent side="right" className="w-full max-w-xs p-6">
                 <div className="mb-6 flex items-center justify-between">
                    <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary" onClick={() => setIsSheetOpen(false)}>
-                    <Zap className="h-6 w-6" />
+                    <Database className="h-6 w-6" />
                     <span>Maria Nikitha Suresh</span>
                   </Link>
                   <SheetClose asChild>

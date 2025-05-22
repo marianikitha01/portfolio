@@ -10,9 +10,9 @@ import { AboutMeSection } from '@/components/home/about-me-section';
 
 export default function HomePage() {
   const quickLinks = [
-    { title: 'Featured Projects', href: '/projects', icon: Briefcase, description: 'Discover my latest data science endeavors.', image: 'https://placehold.co/400x300.png', imageHint: 'data project' },
-    { title: 'Interactive Resume', href: '/resume', icon: UserCircle, description: 'Explore my skills, experience, and education.', image: 'https://placehold.co/400x300.png', imageHint: 'resume document' },
-    { title: 'Contact Me', href: '/contact', icon: Mail, description: 'Let\'s connect! Reach out for inquiries or collaborations.', image: 'https://placehold.co/400x300.png', imageHint: 'contact envelope' },
+    { title: 'Featured Projects', href: '/projects', icon: Briefcase, description: 'Discover my latest data science endeavors.', image: '/projects.png', imageHint: 'data project' },
+    { title: 'Interactive Resume', href: '/resume', icon: UserCircle, description: 'Explore my skills, experience, and education.', image: '/resume.png', imageHint: 'resume document' },
+    { title: 'Contact Me', href: '/contact', icon: Mail, description: 'Let\'s connect! Reach out for inquiries or collaborations.', image: '/contact.png', imageHint: 'contact envelope' },
   ];
 
   return (

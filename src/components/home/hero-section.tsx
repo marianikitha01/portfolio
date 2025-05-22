@@ -6,8 +6,9 @@ import Image from 'next/image';
 
 export function HeroSection() {
   return (
-    <section className="py-16 md:py-24 lg:py-32">
-      <div className="container mx-auto grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-16">
+    <section className="-mt-16 py-6 md:py-8 lg:py-12 flex items-center min-h-screen">
+      <div className="container mx-auto grid grid-cols-1 items-center gap-4
+       md:grid-cols-2 lg:gap-8 px-4 sm:px-6 lg:px-8 min-h-screen">
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-extrabold tracking-tight text-primary sm:text-5xl md:text-6xl">
             Maria Nikitha Suresh
@@ -31,18 +32,16 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
+        <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
           <Image
-            src="https://placehold.co/600x600.png"
+            src="/profile.jpg"
             alt="Maria Nikitha Suresh - Profile"
-            width={600}
-            height={600}
+            width={400}
+            height={400}
             className="rounded-full shadow-2xl object-cover aspect-square"
             priority
             data-ai-hint="graduation portrait"
           />
-           <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full bg-accent opacity-70 blur-xl animate-pulse"></div>
-           <div className="absolute -top-4 -left-4 h-20 w-20 rounded-lg bg-primary opacity-60 blur-lg animate-ping delay-1000"></div>
         </div>
       </div>
     </section>

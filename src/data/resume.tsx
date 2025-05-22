@@ -49,7 +49,7 @@ export const resumeData: ResumeData = {
         'Implemented precision, recall and F1-score for model evaluation, optimizing for medical imaging challenges.',
         'Automated image preprocessing pipelines using Python (OpenCV, NumPy) to improve detection consistency and presented findings to research teams, showcasing data-driven insights for improving surgical training.',
       ],
-      logoUrl: 'https://placehold.co/100x100.png',
+      logoUrl: '/uoa.jpg',
       logoHint: 'university lab'
     },
     {
@@ -62,7 +62,7 @@ export const resumeData: ResumeData = {
         'Applied probabilistic modeling and regularization techniques to enhance video quality and feature extraction.',
         'Conducted performance tuning and model evaluation to improve output accuracy and robustness.',
       ],
-      logoUrl: 'https://placehold.co/100x100.png',
+      logoUrl: '/uoa.jpg',
       logoHint: 'university research'
     },
     {
@@ -76,18 +76,45 @@ export const resumeData: ResumeData = {
         'Utilized statistical modeling to detect anomalies and privacy risks, ensuring compliance with industry standards.',
         'Collaborated cross-functionally to implement data-driven BI solutions for enterprise data workflows.',
       ],
-      logoUrl: 'https://placehold.co/100x100.png',
+      logoUrl: '/protecto.jpg',
       logoHint: 'company logo protecto'
     },
+    {
+      id: 'exp_ey',
+      role: 'Software Intern',
+      company: 'Ernst & Young Global Consulting Services',
+      period: 'Feb 2022 - Apr 2022',
+      description: [
+        'Developed and enhanced front-end features for enterprise applications using ReactJS, collaborating closely with a team of interns and mentors.',
+        'Strengthened skills in agile development practices, project collaboration, and industry-standard workflows.',
+        'Gained exposure to real-world software engineering practices, project execution methodologies, and client-focused solution development.',
+      ],
+      logoUrl: '/ey.jpg', // Replace with actual logo URL if available
+      logoHint: 'Ernst & Young logo'
+    },
+    {
+      id: 'exp_accord',
+      role: 'Software Intern',
+      company: 'Accord Software & Systems',
+      period: 'May 2021 - Jun 2021',
+      description: [
+        'Assisted in backend development tasks using Python and SQL, focusing on data processing and database management.',
+        'Designed and implemented core modules for tracking and data logging, contributing to improved system performance and reliability.',
+        'Gained practical experience in the full software development lifecycle, including coding, debugging, and testing, within a real-world R&D environment.',
+      ],
+      logoUrl: '/accord.jpg', // Replace with actual logo URL if available
+      logoHint: 'Accord Software & Systems logo'
+    },
+
   ],
   education: [
     {
       id: 'edu_uofa',
       institution: 'University of Arizona, United States',
       degree: 'Master of Science in Data Science',
-      period: 'Aug 2023 - May 2025 (Expected)',
-      description: ['Relevant Coursework: Deep Learning, Machine Learning, Data Engineering, Generative AI, NLP, Data Analysis & Visualization.'],
-      logoUrl: 'https://placehold.co/100x100.png',
+      period: 'Aug 2023 - May 2025',
+      description: ['Deep Learning, Machine Learning, Data Engineering, Generative AI, NLP, Data Analysis & Visualization.'],
+      logoUrl: '/uoa.jpg',
       logoHint: 'university campus arizona'
     },
     {
@@ -96,7 +123,7 @@ export const resumeData: ResumeData = {
       degree: 'Bachelor of Technology in Information Technology',
       period: 'June 2018 - May 2022',
       description: ['Focused on foundational concepts in computer science, software development, and database management.'],
-      logoUrl: 'https://placehold.co/100x100.png',
+      logoUrl: '/christ.jpg',
       logoHint: 'university campus christ'
     },
   ],
