@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: 'AAPL Stock Analytics Dashboard (Power BI)',
     description: 'Developed a Python data pipeline and an interactive Power BI dashboard for AAPL stock analytics, including Prophet price forecasts.',
     longDescription: 'Developed a Python-based data pipeline to automate daily OHLC retrieval from Alpha Vantage, enhancing datasets with RSI, MACD, and 30-day moving averages using Pandas. Performed statistical time series analysis in Jupyter and trained a Prophet model to generate 30-day price forecasts with confidence intervals, transforming raw outputs into business-ready insights for BI consumption. Built dynamic DAX measures in Power BI, including Latest Close, Daily % Change, YTD Return, and Predicted Price. Designed a dark-themed, interactive dashboard published to Power BI Service with scheduled refresh.',
-    imageUrl: '/aapl1.jpg',
+    imageUrl: '/aapl1.png',
     imageHint: 'stock market',
     tags: ['Data Visualization', 'Power BI', 'Python', 'Pandas', 'Prophet', 'DAX', 'Time Series', 'API'],
     codeLink: 'https://github.com/marianikitha01/Interactive_stock_market_dashboard_with_AAPL',
