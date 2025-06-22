@@ -63,6 +63,18 @@ export const projects: Project[] = [
     category: 'Data Visualization',
   },
   {
+  id: 'supply-chain-bottleneck-tableau',
+  title: 'Supply Chain Bottleneck Explorer (Tableau)',
+  description: 'Built an interactive Tableau dashboard to analyze supply chain delays and identify bottlenecks across manufacturing stages.',
+  longDescription: 'Designed a stakeholder-facing Tableau dashboard using real-world logistics data to explore bottlenecks across Procurement, Production, Assembly, and QC stages. Cleaned and preprocessed 25K+ records using Python (Pandas), engineered KPIs such as lead time, defect rate, and delay probability. Developed 7+ interactive visualizations including KPI cards, defect trend analysis, delay distribution, and choropleth maps. Delivered key insights such as 76.5% defect rate and 26K+ port delay cases impacting on-time delivery.',
+  imageUrl: '/supply_chain1.png',
+  imageHint: 'logistics bottleneck',
+  tags: ['Tableau', 'Data Visualization', 'Python', 'Pandas', 'Supply Chain', 'KPI Analysis', 'Manufacturing', 'Dashboard'],
+  codeLink: 'https://github.com/marianikitha01/supply-chain-bottleneck-dashboard',
+  liveDemoLink: 'https://public.tableau.com/app/profile/maria.nikitha.suresh/viz/Book1_17485785997010/Dashboard22',
+  category: 'Data Visualization',
+  },
+  {
     id: 'soybean-deforestation-analysis',
     title: 'Soybean Consumption & Deforestation Analysis',
     description: 'Analyzed soybean consumption trends in Brazil (1990-2013) and its impact on deforestation using R and ggplot2.',
