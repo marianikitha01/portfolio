@@ -105,6 +105,22 @@ export const resumeData: ResumeData = {
       logoUrl: '/accord.jpg', // Replace with actual logo URL if available
       logoHint: 'Accord Software & Systems logo'
     },
+    {
+      id: 'exp_alpha_tech',
+      role: 'Data Science Intern',
+      company: 'Alpha Tech Academy',
+      period: 'Jul 2021 - Jan 2022',
+      description: [
+        'Analyzed enrollment and performance data using pandas and NumPy to identify engagement and outcome trends.',
+        'Developed Microsoft PowerBI dashboards monitoring course completion rates, average scores, and student satisfaction.',
+        'Built a dropout-risk prediction model in scikit-learn with 91% accuracy to enable targeted support interventions.',
+        'Automated end-to-end data preprocessing pipelines (data ingestion, cleaning, and feature engineering), cutting report generation time by 40%.'
+      ],
+      logoUrl: '/atas.jpg',
+      logoHint: 'Alpha Tech Academy logo'
+    },
+
+    
 
   ],
   education: [
