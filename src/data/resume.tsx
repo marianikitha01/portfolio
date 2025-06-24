@@ -93,19 +93,6 @@ export const resumeData: ResumeData = {
       logoHint: 'Ernst & Young logo'
     },
     {
-      id: 'exp_accord',
-      role: 'Software Intern',
-      company: 'Accord Software & Systems',
-      period: 'May 2021 - Jun 2021',
-      description: [
-        'Assisted in backend development tasks using Python and SQL, focusing on data processing and database management.',
-        'Designed and implemented core modules for tracking and data logging, contributing to improved system performance and reliability.',
-        'Gained practical experience in the full software development lifecycle, including coding, debugging, and testing, within a real-world R&D environment.',
-      ],
-      logoUrl: '/accord.jpg', // Replace with actual logo URL if available
-      logoHint: 'Accord Software & Systems logo'
-    },
-    {
       id: 'exp_alpha_tech',
       role: 'Data Science Intern',
       company: 'Alpha Tech Academy',
@@ -119,6 +106,20 @@ export const resumeData: ResumeData = {
       logoUrl: '/atas.jpg',
       logoHint: 'Alpha Tech Academy logo'
     },
+    {
+      id: 'exp_accord',
+      role: 'Software Intern',
+      company: 'Accord Software & Systems',
+      period: 'May 2021 - Jun 2021',
+      description: [
+        'Assisted in backend development tasks using Python and SQL, focusing on data processing and database management.',
+        'Designed and implemented core modules for tracking and data logging, contributing to improved system performance and reliability.',
+        'Gained practical experience in the full software development lifecycle, including coding, debugging, and testing, within a real-world R&D environment.',
+      ],
+      logoUrl: '/accord.jpg', // Replace with actual logo URL if available
+      logoHint: 'Accord Software & Systems logo'
+    },
+    
 
     
 
