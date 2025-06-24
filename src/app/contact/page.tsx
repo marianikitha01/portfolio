@@ -59,7 +59,7 @@ export default function ContactPage() {
                 <MapPin className="h-5 w-5 mr-3 mt-1 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Location</h4>
-                  <p>Tucson, Arizona (Open to relocate)</p> {/* Example, update if needed */}
+                  <p>Arizona (Open to relocate anywhere in USA)</p> {/* Example, update if needed */}
                 </div>
               </div>
             </CardContent>
