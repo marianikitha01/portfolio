@@ -3,6 +3,18 @@ import type { Project } from '@/lib/types';
 
 export const projects: Project[] = [
   {
+    id: 'rag-bi-chatbot',
+    title: 'RAG-Powered Conversational BI Chatbot using LangChain and GPT-4',
+    description: 'Built an LLM-powered BI chatbot that enables natural language querying over tabular data using RAG architecture, FAISS, and GPT-4.',
+    longDescription: 'Developed a Retrieval-Augmented Generation (RAG) based conversational chatbot to enable natural language queries over CSV files, showcasing practical applications of LLMs in business intelligence. Engineered a semantic search pipeline using Hugging Face Sentence Transformers and FAISS for vector indexing. Integrated LangChain and GPT-4 to deliver accurate, context-aware insights. Containerized the project with Docker for seamless deployment and reproducibility.',
+    imageUrl: '/rag-bot.png',
+    imageHint: 'chat interface with data analysis',
+    tags: ['LLM', 'LangChain', 'RAG', 'GPT-4', 'FAISS', 'Hugging Face', 'Generative AI', 'Docker', 'NLP'],
+    codeLink: 'https://github.com/marianikitha01/RAG-Powered-Conversational-BI-Chatbot',
+    liveDemoLink: '#',
+    category: 'LLM Applications',
+  },
+  {
     id: 'chikankari-design-generator',
     title: 'Chikankari Design Generator using Generative AI',
     description: 'Built a generative pipeline using Stable Diffusion v1.5 fine-tuned with Advanced LoRA to synthesize authentic Chikankari embroidery pattern designs.',
