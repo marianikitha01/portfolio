@@ -15,6 +15,18 @@ export const projects: Project[] = [
     category: 'LLM Applications',
   },
   {
+    id: 'feature-rollout-ab-test',
+    title: 'Feature Rollout Impact Analysis (A/B Testing, SQL, Azure DevOps)',
+    description: 'Designed and executed end-to-end A/B testing for a simulated SaaS product using SQL, statistical analysis, and DevOps best practices.',
+    longDescription: 'Built an industry-level A/B testing project to measure the impact of a new feature rollout in a subscription-based SaaS environment. Used PostgreSQL for behavioral analysis, applying advanced SQL techniques such as window functions, cohort retention, and user-defined functions. Validated experimental outcomes with Python statistical tests (t-tests, chi-square) to evaluate conversion, churn, and satisfaction. Simulated Agile workflows using Azure DevOps Boards with structured Epics, Features, and Tasks. Integrated Git with Azure Pipelines to implement a CI/CD workflow for reproducible analysis and automation.',
+    imageUrl: '/feature-rollout.png', 
+    imageHint: 'A/B testing dashboard with churn and retention metrics',
+    tags: ['SQL', 'A/B Testing', 'Data Analysis', 'PostgreSQL', 'Azure DevOps', 'CI/CD', 'Python', 'Experiment Design'],
+    codeLink: 'https://github.com/marianikitha01/feature-rollout-impact-analysis',
+    liveDemoLink: '#',
+    category: 'Data Analysis',
+  },
+  {
     id: 'chikankari-design-generator',
     title: 'Chikankari Design Generator using Generative AI',
     description: 'Built a generative pipeline using Stable Diffusion v1.5 fine-tuned with Advanced LoRA to synthesize authentic Chikankari embroidery pattern designs.',
